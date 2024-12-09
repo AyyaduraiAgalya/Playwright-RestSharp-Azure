@@ -160,3 +160,31 @@ cython_debug/
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
+
+# Ignore build artifacts for API Tests
+backend_tests/JuiceShopApiTests/bin/
+backend_tests/JuiceShopApiTests/obj/
+
+# Ignore sensitive API config
+backend_tests/JuiceShopApiTests/appsettings.json
+
+# Ignore Playwright dependencies and reports
+frontend_tests/playwright/node_modules/
+frontend_tests/playwright/playwright-report/
+frontend_tests/playwright/test-results/
+
+# Ignore Playwright environment variables
+frontend_tests/playwright/.env
+
+# Ignore IDE-specific files
+.vscode/
+.vs/
+*.user
+*.suo
+
+# Ignore Mac-specific files
+.DS_Store
+
+# Logs and temporary files
+*.log
+*.tmp
